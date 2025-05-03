@@ -1,0 +1,248 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+}
+.navbar,
+footer {
+  background-color: #c4d7f2;/* biru pastel lebih pekat */
+}
+.navbar-brand {
+  color: #0056b3 !important;
+}
+.nav-link:hover {
+  color: #e75480 !important; /* pink lebih solid */
+}
+
+
+/*Section Hero */
+.hero-section {
+  background: linear-gradient(rgba(100, 149, 237, 0.6), rgba(255, 182, 193, 0.6));
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1c1c1c;
+}
+.hero-section h1,
+.hero-section h3 {
+  font-size: 1.8rem;
+}
+.hero-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ff4081; 
+  margin-bottom: 10px; 
+}
+.hero-section h3 span {
+  color: #007bff; 
+}
+.social-media i {
+  font-size: 2rem; /* Ukuran ikon */
+  margin: 0 10px; /* Jarak antar ikon */
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+.social-media i:hover {
+  transform: scale(1.2); /* Untuk membesarkan ikon sebanyak 20% saat hover */
+  color: #ff4081; /* Warna berubah saat hover */
+}
+.hero-img {
+  max-width: 100%; /* Untuk memaximalkan gambar agar memenuhi container */
+  width: 100%;
+  max-width: 300px; /* Menyesuaikan ukuran maximal hanya sebatas ini saja */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+
+/* Section About*/
+#about {
+  background-color: #e3f2fd;
+}
+.skill-badge {
+  display: inline-block; /* masih belum paham */
+  background: linear-gradient(145deg, #f5d5e0, #c5dbee);
+  color: #333;
+  border-radius: 20px; /* Untuk membuat badge membulat */
+  padding: 8px 16px; /* Memberi ruang untuk tulisan yang berada di badge */
+  margin: 6px; /* Jarak tiap bagde */
+  font-weight: 500;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.skill-badge:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 12px rgba(0,0,0,0.15);
+}
+.sertif-card {
+  background: #f5f5fa;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #cfcfd4, -8px -8px 16px #ffffff;
+  transition: 0.3s ease;
+}
+.sertif-card:hover {
+  transform: scale(1.03);
+}
+
+
+/*Section Services*/
+#services {
+  background-color: #ffe5f0;
+}
+.service-card {
+  background: #f5f6fa;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #c9c9d3, -8px -8px 16px #ffffff;
+  transition: 0.3s ease;
+}
+.service-card:hover {
+  transform: scale(1.03);
+}
+.icon-service {
+  font-size: 40px;
+  color: #ff7aa2;
+}
+
+
+/* Section Gallery*/
+#gallery {
+  background-color:  #e3f2fd;
+}
+/* Card Gallery Utama */
+.card.mb-4 {
+  background-color: #f5f6fa; 
+  border-radius: 15px;
+}
+/* Card Setiap Kelompok */
+.gallery-group-card {
+  background-color:  #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.05), -4px -4px 12px rgba(255,255,255,0.7);
+}
+/* Gallery Item & Overlay */
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+}
+/* Memberi css pada tiap item img */
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  display: block;
+}
+/* Agar img timbul saat kursor diarahkan */
+.gallery-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.7); 
+}
+.gallery-item .overlay {
+  position: absolute; /* Overlay berada dibagian bawah gambar */
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Responsive berlaku saat layar kecil: memastikan jarak antar kartu */
+@media (max-width: 767px) {
+  #gallery .card.mb-4 .row > .col-12 {
+    margin-bottom: 1rem;
+  }
+}
+
+
+#artikel {
+  background-color: #fce4ec;
+}
+.artikel-card {
+  background: #fff;
+  border-radius: 25px;
+  overflow: hidden; /* Menyesuaikan foto dengan card */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.artikel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+.artikel-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.artikel-card h5 {
+  font-size: 1.2rem;
+  margin: 15px 15px 10px;
+}
+.artikel-card p {
+  font-size: 0.95rem;
+  margin: 0 15px 15px;
+  color: #555;
+}
+.artikel-card .read-link {
+  display: inline-block;
+  margin: 0 15px 15px;
+  color: #e91e63;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.artikel-card .read-link:hover {
+  color: #ad1457;
+}
+
+
+/* Section Contact */
+#contact {
+  background-color: #e3f2fd; 
+}
+.contact-section {
+  background-color: #fff0f5;
+  color: #333;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.contact-section form input,
+.contact-section form textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.contact-section .btn-primary {
+  background-color: #87cefa;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.contact-section .btn-primary:hover {
+  background-color: #00bfff; 
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem; /* Sudut akan membesar saat hover */
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.btn-primary {
+  background-color: #ff8fb1;
+  border-color: #ff8fb1;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #e75480;
+  border-color: #e75480;
+} 
+
