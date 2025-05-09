@@ -1,0 +1,103 @@
+    /* Global Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #f8bbd0, #bbdefb, #e1bee7);
+        color: #222;
+      }
+      
+      .navbar,
+      footer {
+        background-color: #c4d7f2; /* biru pastel lebih pekat */
+      }
+      
+      .nav-link:hover {
+        color: #e75480 !important; /* pink lebih solid */
+      }
+      
+      .gradient-text {
+        background: linear-gradient(to right, #ff5f9e, #5a8cd6); /* pink ke biru */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+      }
+  
+      .article-container {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 30px;
+        margin-top: 40px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+  
+      .article-image {
+        text-align: center;
+        margin: 1.5rem 0;
+      }
+  
+      .article-image img {
+        max-width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+  
+      .comment-box {
+        margin-top: 40px;
+      }
+  
+      .comment-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: #f9f9f9;
+      }
+  
+      .footer {
+        background-color: #aec8ee;; /* baby blue soft */
+        color: #333;
+      }
+      
+      .footer a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      
+      .footer a:hover {
+        color:  #e75480 ; /* pink soft pas hover */
+      }
+      
+      .footer-brand {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #007bff; 
+      }
+      
+      .footer-heading {
+        font-weight: 600;
+        color: #007bff;
+        margin-bottom: 1rem;
+      }
+      
+      .footer-text {
+        margin-bottom: 1rem;
+        color: #444;
+      }
+      
+      .social-icon {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: #111; /* warna bulat ikon */
+        color: white;            /* warna ikon */
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+      
+      .social-icon:hover {
+        background-color: pink; /* hover jadi pink */
+        color: white;
+      }

@@ -14,29 +14,33 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!--Link Koneksi Font Google-->
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
+  <!-- Tambah Google Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yHUkOiTfuzG+Qnh2M6mjfXGmiQUGMzkW/ct7fEMBeDNHj1S8+07eZPyRxIICs1iR8BdxvRbkavhXWcfwwdRgVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="#">My Portofolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#artikel">Articles</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand logo-text gradient-text" href="#">Adeysta</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#article">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
   <section id="home" class="hero-section d-flex align-items-center">
@@ -44,17 +48,17 @@
       <div class="row align-items-center">
         <!-- Teks di kiri -->
         <div class="col-md-6" data-aos="fade-left">
-          <h1 class="fw-bold">Hello, It's Me</h1>
-          <h2>Adeysta Salsabilla</h2>
+          <h1 class="">Hello, It's Me</h1>
+          <h2 class="">Adeysta Salsabilla</h2>
           <h3>And I'm a <span id="typed-text">Student</span></h3>
-          <p class="lead">Let's Shine Together!!!</p>
+          <p class="lead">Bold in logic, beautiful in style</p>
           <div class="social-media">
             <a href="https://wa.me/6282267072250"><i class='bx bxl-whatsapp'></i></a>
             <a href="https://instagram.com/salsabillaadt"><i class='bx bxl-instagram' ></i></a>
             <a href="mailto:adeystasalsabilla13@gmail.com"><i class='bx bx-envelope' ></i></a>
           </div>
           <div class="mt-4">
-            <button onclick="showmessages()" class="btn btn-primary">Click Me</button>
+            <button onclick="showmessages()" class="btn btn-custom">Click Me</button>
           </div>
         </div>
         <!-- Gambar di kanan -->
@@ -71,11 +75,9 @@
     <div class="container" data-aos="fade-right">
       <div class="row">
         <div class="col-12">
-          <h2 class="fw-bold mb-3">About Me</h2>
+          <h2 class="fw-bold mb-3 center">About Me</h2>
           <p>
-            Halo! Saya Adeysta Salsabilla, seorang pelajar dengan minat di bidang desain grafis, video editing, dan humas. 
-            Saya aktif di berbagai kegiatan organisasi serta mengikuti beberapa pelatihan untuk mengasah keterampilan saya. 
-            Di bawah ini adalah beberapa sertifikat yang pernah saya peroleh:
+            Hi! I'm Adeysta Salsabilla, a passionate student with strong interests in graphic design, video editing, and public relations. I actively involved in organizational activities and enjoy developing myself through training and collaborative projects. My role in a campus-based educational has sharpened my communication and teamwork skills. Along the way, I've also explored the world of technology and media by learning HTML, CSS, Canva, and presentation tools like PowerPoint. I'm driven by creativity, collaboration, and the challenge of continuous improvement. This portofolio is reflection of my journey and growth.
           </p>
           
           <div class="skills mt-5">
@@ -98,23 +100,23 @@
             </div>
           </div>
           
-          <!-- Sertifikat Cards -->
+          <!-- Sertifikat Cards --> <!-- Sebaiknya tambahkan deskripsi-->
           <div class="row mt-4 g-4">
             <div class="col-md-4">
               <div class="card h-100 shadow-sm p-3 sertif-card">
-                <img src="img/Sertifikat Html.jpeg" class="img-fluid rounded" alt="Sertifikat Html">
+                <img src="img/Certificate/Sertifikat Html.jpeg" class="img-fluid rounded" alt="Sertifikat Html">
                 <p class="mt-2 text-center fw-medium">Sertifikat HTML</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card h-100 shadow-sm p-3 sertif-card">
-                <img src="img/Sertifikat Css.jpeg" class="img-fluid rounded" alt="Sertifikat Css">
+                <img src="img/Certificate/Sertifikat Css.jpeg" class="img-fluid rounded" alt="Sertifikat Css">
                 <p class="mt-2 text-center fw-medium">Sertifikat CSS</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card h-100 shadow-sm p-3 sertif-card">
-                <img src="img/Sertifikat Workshop.jpeg" class="img-fluid rounded" alt="Sertifikat Workshoop">
+                <img src="img/Certificate/Sertifikat Workshop.jpeg" class="img-fluid rounded" alt="Sertifikat Workshop">
                 <p class="mt-2 text-center fw-medium">Sertifikat Workshop</p>
               </div>
             </div>
@@ -162,109 +164,84 @@
   </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery" class="py-5">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">Gallery</h2>
-    <div class="row g-4">
-      
-      <!-- Vibes Card -->
-      <div class="col-12 col-md-6">
-        <div class="card folder-card h-100 p-3">
-          <div class="folder-tab"></div>
-          <h5 class="fw-bold mb-3">Vibes</h5>
-          <div class="row g-2">
+<!-- SECTION: GALLERY -->
+<section id="gallery" class="gallery-section">
+  <h2 class="section-title" data-aos="fade-down">Gallery</h2>
 
-            <div class="col-6">
-              <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/Vibes 1.jpeg" class="img-fluid" alt="Vibes 1">
-                <div class="overlay">
-                  <p class="text-white text-center m-0">Langit Maghrib Selesai Komprehensif 2022</p>
-                </div>
-              </div>
-            </div>
+  <div class="filter-buttons" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web Design</button>
+    <button class="filter-btn" data-filter="photo">Photography</button>
+    <button class="filter-btn" data-filter="illustration">Illustration</button>
+  </div>
 
-            <div class="col-6">
-              <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/Vibes 2.jpeg" class="img-fluid" alt="Vibes 2">
-                <div class="overlay">
-                  <p class="text-white text-center m-0">Langit Sibolangit 2023</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- Kegiatan Organisasi Card -->
-      <div class="col-12 col-md-6">
-        <div class="card folder-card h-100 p-3">
-          <div class="folder-tab"></div>
-          <h5 class="fw-bold mb-3">Kegiatan Organisasi</h5>
-          <div class="row g-2">
-
-            <div class="col-6">
-              <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/Pro.asta1.JPG" class="img-fluid" alt="Workshop FSD 2024">
-                <div class="overlay">
-                  <p class="text-white text-center m-0">Workshop Full-stack Developer 2024</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="gallery-item position-relative rounded overflow-hidden">
-                <img src="img/Pro.asta2.jpeg" class="img-fluid" alt="Kunjungan Kemanusiaan">
-                <div class="overlay">
-                  <p class="text-white text-center m-0">Kunjungan Kemanusiaan 2024</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
+  <div class="gallery-container">
+    <div class="gallery-item" data-category="web" data-aos="fade-up">
+      <img src="img/Portofolio/Web Design/web1.jpeg" alt="Web Design 1">
+    </div>
+    <div class="gallery-item" data-category="web" data-aos="fade-up">
+      <img src="img/Portofolio/Web Design/web2.jpeg" alt="Web Design 2">
+    </div>
+    <div class="gallery-item" data-category="web" data-aos="fade-up">
+      <img src="img/Portofolio/Web Design/web3.jpeg" alt="Web Design 3">
+    </div>
+    <div class="gallery-item" data-category="photo" data-aos="fade-up">
+      <img src="img/Portofolio/Photography/photography1.jpg" alt="Photography 1">
+    </div>
+    <div class="gallery-item" data-category="photo" data-aos="fade-up">
+      <img src="img/Portofolio/Photography/photography2.jpg" alt="Photography 2">
+    </div>
+    <div class="gallery-item" data-category="photo" data-aos="fade-up">
+      <img src="img/Portofolio/Photography/photography3.jpg" alt="Photography 3">
+    </div>
+    <div class="gallery-item" data-category="illustration" data-aos="fade-up">
+      <img src="img/Portofolio/Illustration/illustration1.jpg" alt="Illustration 1">
+    </div>
+    <div class="gallery-item" data-category="illustration" data-aos="fade-up">
+      <img src="img/Portofolio/Illustration/illustration2.jpg" alt="Illustration 2">
+    </div>
+    <div class="gallery-item" data-category="illustration" data-aos="fade-up">
+      <img src="img/Portofolio/Illustration/illustration3.jpg" alt="Illustration 3">
     </div>
   </div>
 </section>
 
-  <!-- Articles -->
-  <section id="artikel" class="py-5">
+
+  <!-- Articles --> <!-- Buat artikel sendiri kemudian dibawahnya tambahkan komentar-->
+  <section id="article" class="py-5">
     <div class="container">
-        <h2 class="text-center fw-bold mb-4">Artikel</h2>
+        <h2 class="text-center fw-bold mb-4">Articles</h2>
       <div class="row justify-content-center">
 
         <div class="col-md-4 mb-4">
           <div class="artikel-card">
-            <a href="https://www.dikasihinfo.com/ragam/98010031693/hubungan-mahasiswa-dengan-masyarakat-peran-penting-dalam-pembangunan-sosial" target="_blank">
-              <img src="img/Artikel1.jpeg" alt="Artikel 1">
-              <h5>Peran Mahasiswa dalam Pembangunan Sosial Masyarakat</h5>
-              <p>Artikel ini membahas pentingnya kontribusi mahasiswa dalam kegiatan sosial dan pengabdian masyarakat.</p>
-              <span class="read-link">Baca Artikel</span>
+            <a href="article1.html" target="_blank">
+              <img src="img/Articles/Artikel1.jpg" alt="Artikel 1">
+              <h5>The Art of Design in The Digital Era</h5>
+              <p>Design is more than just visual appearance—it's the way we experience and interact with the world around us.</p>
+              <span class="read-link">Read More</span>
             </a>
           </div>
         </div>
   
         <div class="col-md-4 mb-4">
           <div class="artikel-card">
-            <a href="https://polteksci.ac.id/blog/pentingnya-mempelajari-soft-skills-bagi-mahasiswa/" target="_blank">
+            <a href="article2.html" target="_blank">
               <img src="img/Artikel2.jpeg" alt="Artikel 2">
-              <h5>Pentingnya Soft Skills bagi Mahasiswa di Era Digital</h5>
-              <p>Membahas bagaimana soft skills seperti komunikasi, kerja tim, dan manajemen waktu sangat berpengaruh dalam karir mahasiswa masa kini.</p>
-              <span class="read-link">Baca Artikel</span>
+              <h5>The Importance of Soft Skills for Students int the Digital Era</h5>
+              <p>In today’s rapidly evolving world, the digital age has transformed nearly every aspect of our lives, including education.</p>
+              <span class="read-link">Read More</span>
             </a>
           </div>
         </div>
   
         <div class="col-md-4 mb-4">
           <div class="artikel-card">
-            <a href="https://campusnet.news/dinamika-kehidupan-mahasiswa-antara-akademik-dan-organisasi/" target="_blank">
-              <img src="img/Artikel3.jpeg" alt="Artikel 3">
-              <h5>Organisasi Mahasiswa: Antara Aktivisme dan Akademik</h5>
-              <p>Menjelaskan keseimbangan antara kegiatan organisasi dan akademik yang sering dihadapi mahasiswa.</p>
-              <span class="read-link">Baca Artikel</span>
+            <a href="article3.html" target="_blank">
+              <img src="img/Articles/Artikel3.jpg" alt="Artikel 3">
+              <h5>The Future of AI: Revolutionizing Technology and Everyday Life</h5>
+              <p>Artifical Intelligance is transforming key industries and redefining modern life. its rapid growth present</p>
+              <span class="read-link">Read More</span>
             </a>
           </div>
         </div>
@@ -273,41 +250,99 @@
     </div>
   </section>
   
-  <!-- Contact -->
-  <section id="contact" class="py-5">
-    <div class="container" data-aos="fade-up"> <!-- AOS animasi aktif di bagian contact -->
-      <h2 class="text-center fw-bold mb-4">Contact Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Nama Anda" required />
-            </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email Anda" required />
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="15" placeholder="Pesan Anda"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Kirim</button>
-          </form>
-        </div>
+ 
+<!-- Contact -->
+<section id="contact" class="contact-section py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center fw-bold mb-5">Contact Me</h2>
+    <div class="row gy-4 align-items-stretch">
 
-        <div class="col-md-4 d-flex flex-column align-items-start justify-content-center" data-aos="fade-left">
-          <p><i class='bx bx-map'></i> Alamat: Jl. Sei Mencirim</p>
-          <p><i class='bx bx-envelope'></i> Email: adeystasalsabilla13@gmail.com</p>
-          <p><i class='bx bx-phone'></i> Telepon: 0822-6707-2250</p>
-          
-        <div class="col-md-6">
-          <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Jln.%20Mencirim%20Medan+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.versicherungen.at/zahnversicherung/'>Krankenversicherung Zähne</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=2d26cbcc65724790f4f594b4fce08524a3f99d5f'></script>
+      <!-- Box Informasi Kontak -->
+      <div class="col-md-6 d-flex">
+        <div class="contact-box p-4 shadow-sm rounded-4 w-100">
+          <p><i class='bx bx-map'></i> <strong>Alamat:</strong> Jl. Sei Mencirim, Medan, Sumatera Utara</p>
+          <p><i class='bx bx-envelope'></i> <strong>Email:</strong> adeystasalsabilla13@gmail.com</p>
+          <p><i class='bx bx-phone'></i> <strong>Telepon:</strong> 0822-6707-2250</p>
+          <p><i class='bx bxl-instagram'></i> <strong>Instagram:</strong> salsabillaadt</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://wa.me/6282267072250"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://instagram.com/salsabillaadt"><i class='bx bxl-instagram' ></i></a>
+            <a href="mailto:adeystasalsabilla13@gmail.com"><i class='bx bx-envelope' ></i></a>
+          </div>
         </div>
       </div>
+
+      <!-- Formulir Kontak -->
+      <div class="col-md-6 d-flex">
+        <form class="w-100 shadow-sm p-4 rounded-4 bg-white">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nama Anda" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Anda" required />
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nomor Telepon" required />
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Pesan Anda"></textarea>
+          </div>
+          <button type="submit" class="btn custom-btn px-4">Kirim Pesan</button>
+        </form>
+      </div>
     </div>
-  </section>
+
+    <!-- Google Maps -->
+    <div class="mt-5">
+      <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Jln.%20Mencirim%20Medan+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
-  <footer class="text-center py-4">
-    <p class="mb-0">&copy; 2025 Adeysta Salsabilla. All rights reserved.</p>
+  <footer class="footer mt-5 pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <!-- Kolom 1: Tentang -->
+        <div class="col-md-4">
+          <h5 class="footer-brand">Adeysta Salsabilla</h5>
+          <p class="footer-text">Bold in Logic, Beautiful in Style</p>
+          <div class="social-media">
+            <a href="https://wa.me/6282267072250"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://instagram.com/salsabillaadt"><i class='bx bxl-instagram' ></i></a>
+            <a href="mailto:adeystasalsabilla13@gmail.com"><i class='bx bx-envelope' ></i></a>
+          </div>
+        </div>
+        <!-- Kolom 2: Link -->
+        <div class="col-md-4">
+          <h6 class="footer-heading">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Kolom 3: Services -->
+        <div class="col-md-4">
+          <h6 class="footer-heading">Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="#">Design Grafis</a></li>
+            <li><a href="#">Video Editing</a></li>
+            <li><a href="#">Humas & MC </a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <hr />
+      
+      <div class="d-flex justify-content-between flex-wrap small mt-3">
+        <span>© 2025 AdeyPortfolio. All rights reserved.</span>
+        <span><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></span>
+      </div>
+    </div>
   </footer>
 
   <!-- Script Bootstrap + Animasi -->
@@ -324,6 +359,13 @@
 
   <!-- Script tambahan -->
   <script src="script.js"></script>
-  
+
+  <!-- Pesan tombol Click Me -->
+  <script>
+  function showmessages() {
+    alert("Terima kasih sudah mengunjungi portofolio Adeysta! :)");
+  }
+  </script>
+
 </body>
 </html>
